@@ -1,16 +1,24 @@
-# assets_follow_up
+# Assets Follow Up
 
-A new Flutter project.
+A mobile application to track and manage company assets.
 
-## Getting Started
+This code was developed as a challenge for TRACTIAN.
 
-This project is a starting point for a Flutter application.
+## Notes
 
-A few resources to get you started if this is your first Flutter project:
+- Although Flutter is an extremely flexible framework and this application could be developed in a less "scalable" way, I considered it essential to approach it as if I were working on a company product. Therefore, I structured the entire codebase following Clean Architecture and Clean Code principles, implementing layers, abstracting objects, and maintaining a highly organized, readable, and well-typed codebase.
+- The application is designed to provide an easy way for companies to keep track of their assets.
+- It includes features like asset categorization, tracking, and reporting.
+- The user interface is designed to be intuitive, ensuring that users can quickly access the information they need.
+- The app was built using Flutter, following best practices in mobile app development, including Clean Architecture and SOLID principles.
+- The code is structured to be maintainable and scalable, with modular components that can be easily extended or modified.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Code Improvements
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Add a parser class.
+- Implement `Either<Left, Right>` for handling success and error scenarios.
+- Add abstraction layers for a Client and Navigator specific to the application.
+- Define enums for `StatusType` and `Status` based on the complete list of possibilities provided by the backend.
+- Implement a shimmer effect with a skeleton for a loading page.
+- Implement counting of children in each node of the asset tree.
+- Write unit tests to ensure easier future maintenance.
