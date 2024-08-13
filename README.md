@@ -4,6 +4,17 @@ A mobile application to track and manage company assets.
 
 This code was developed as a challenge for TRACTIAN.
 
+## Important
+
+- To demonstrate my skills, I want to highlight that I did not use any AI services (Copilot, ChatGPT, etc.). Everything was developed from scratch based on my own knowledge. 😄
+- I also recorded a small timelapse of my progress, and here are the links:
+  https://drive.google.com/file/d/1iJDLYV5GC6YM3pZqK9jxywU0aSpGk6wd/view?usp=sharing
+  https://drive.google.com/file/d/1mmNKOWBxH8DWNHHyQnU__OfD3yMR3-qD/view?usp=sharing
+
+## Application Video
+
+https://github.com/user-attachments/assets/42182fab-d95e-4983-8537-c6be5b46a746
+
 ## Notes
 
 - Although Flutter is an extremely flexible framework and this application could be developed in a less "scalable" way, I considered it essential to approach it as if I were working on a company product. Therefore, I structured the entire codebase following Clean Architecture and Clean Code principles, implementing layers, abstracting objects, and maintaining a highly organized, readable, and well-typed codebase.
