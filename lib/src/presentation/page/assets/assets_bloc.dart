@@ -62,10 +62,13 @@ class AssetsBloc extends Cubit<AssetsState> {
         search: search, filter: currentState.filter);
   }
 
-  void onTreeItemTypeFilterChange(TreeItemTypeFilter filter) {
+   void onTreeItemTypeFilterChange(TreeItemTypeFilter filter) {
     final currentState = state as AssetsLoadedState;
     getTreeFiltered(getCompanyTreeSnapshotUseCase(tree: _tree),
-        filter: filter, search: currentState.search);
+        filter: currentState.filter != null
+            ? (filter == currentState.filter ? null : filter)
+            : filter,
+        search: currentState.search);
   }
 
   void getTreeFiltered(List<TreeItemEntity> tree,
