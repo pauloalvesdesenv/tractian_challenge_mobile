@@ -1,0 +1,9 @@
+Code Improvements
+
+* Add a parser class
+* Add Either <Left, Rigth>
+* Add abstraction in a Client and Navigator specific for application
+* Add a Enums to StatusType and Status (backend inform complete list of possibilities)
+* Add a Shimmer effect with skeleton of a loaded page
+* Count of childrens in each node of tree
+* Write a unit tests for future maintence
